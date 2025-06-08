@@ -1,0 +1,13 @@
+	MOVE 40000, R7
+	CALL F_main
+	HALT
+
+F_main
+	MOVE %D 18838, R1
+	SHL R1, %D 16, R1
+	MOVE %D 722, R2
+	OR R1, R2, R1
+	PUSH R1
+	POP R6
+	ADD R7, %D 0, R7
+	RET

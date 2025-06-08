@@ -1,0 +1,12 @@
+	MOVE 40000, R7
+	CALL F_main
+	HALT
+
+G_x	DW %D 72
+
+F_main
+	LOAD R1, (G_x)
+	PUSH R1
+	POP R6
+	ADD R7, %D 0, R7
+	RET

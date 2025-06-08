@@ -1,0 +1,12 @@
+%V <%> <expr> <atom>
+%T OPERAND OP_MINUS LIJEVA_ZAGRADA DESNA_ZAGRADA UMINUS
+%Syn a
+<%>
+ <expr>
+<expr>
+ <atom>
+ <expr> OP_MINUS <atom>
+<atom>
+ OPERAND
+ UMINUS <atom>
+ LIJEVA_ZAGRADA <expr> DESNA_ZAGRADA

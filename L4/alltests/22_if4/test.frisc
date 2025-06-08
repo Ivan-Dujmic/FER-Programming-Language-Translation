@@ -1,0 +1,43 @@
+	MOVE 40000, R7
+	CALL F_main
+	HALT
+
+G_x	DW %D 1234
+
+G_y	DW %D 125
+
+F_main
+	LOAD R1, (G_x)
+	PUSH R1
+	LOAD R1, (G_y)
+	PUSH R1
+	POP R2
+	POP R1
+	CMP R1, R2
+	JP_SGE J_0
+	MOVE %D 0, R1
+	PUSH R1
+	JP J_1
+J_0
+	MOVE %D 1, R1
+	PUSH R1
+J_1
+	POP R1
+	CMP R1, 0
+	JP_Z J_2
+	MOVE %D 32, R1
+	PUSH R1
+	POP R6
+	ADD R7, %D 0, R7
+	RET
+J_2
+	MOVE %D 21, R1
+	PUSH R1
+	POP R6
+	ADD R7, %D 0, R7
+	RET
+	MOVE %D 9, R1
+	PUSH R1
+	POP R6
+	ADD R7, %D 0, R7
+	RET

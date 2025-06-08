@@ -1,0 +1,30 @@
+	MOVE 40000, R7
+	CALL F_main
+	HALT
+
+G_	DW %D 0
+
+F_main
+	MOVE %D 0, R1
+	PUSH R1
+	LOAD R1, (G_a)
+	PUSH R1
+	MOVE %D 4, R1
+	PUSH R1
+	LOAD R1, (G_a)
+	PUSH R1
+	POP R2
+	POP R1
+	ADD R1, R2, R1
+	PUSH R1
+	MOVE %D 2, R1
+	PUSH R1
+	LOAD R1, (G_a)
+	PUSH R1
+	POP R2
+	POP R1
+	ADD R1, R2, R1
+	PUSH R1
+	POP R6
+	ADD R7, %D 0, R7
+	RET
