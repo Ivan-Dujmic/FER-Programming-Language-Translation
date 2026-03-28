@@ -5,6 +5,6 @@ Each part is unfinished. I'm hoping to find some time to finish it and combine i
 
 # Parts
 **Lexer Generator**  
-**Parse Generator**  
+**Parser Generator**  
 **Semantic Analyzer**  
 **Code Generator**  
