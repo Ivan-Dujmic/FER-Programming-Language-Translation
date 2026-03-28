@@ -1,2 +1,2 @@
-*_test/** linguist-detectable=false
-Lab4/FRISC/** linguist-detectable=false
+*_test/** linguist-vendored
+Lab4/FRISC/** linguist-vendored
