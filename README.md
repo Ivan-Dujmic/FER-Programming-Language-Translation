@@ -3,8 +3,7 @@
 A compiler that translates a reduced version of C to FER's FRISC using C++.  
 Each part is unfinished. I'm hoping to find some time to finish it and combine it into a single unit.
 
-# Parts
-**Lexer Generator**  
-**Parser Generator**  
-**Semantic Analyzer**  
-**Code Generator**  
+### Lab1 - Lexer Generator  
+### Lab2 - Parser Generator
+### Lab3 - Semantic Analyzer
+### Lab4 - Code Generator
